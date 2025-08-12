@@ -1,3 +1,19 @@
+import json
+def read_log_json(filename):
+    try:
+        with open(filename, 'r', encoding='utf-8') as file:
+            log_data = json.load(file)
+    except FileNotFoundError:
+        print('오류: 파일을 찾을 수 없습니다 - ' + filename)
+        raise
+    except json.JSONDecodeError as e:
+        print('JSON 파싱 오류: ' + str(e))
+        raise
+    except Exception as e:
+        print('예상치 못한 오류 발생: ' + str(e))
+        raise
+    return log_data
+
 def read_log_file(filename):
     """
     로그 파일을 읽어서 전체 내용을 반환합니다.

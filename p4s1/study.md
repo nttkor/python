@@ -6,7 +6,7 @@
 * 가상환경을 만들고 싶은 패스로 이동후 python venv .venv (.venv 디렉토리에 가상환경을 만든다) 
 * .gitignore를 만들어 가상환경은 트랙킹 안되게 한다. __pycache__ .venv
 * 리포지토리의 루트 폴드에서 . ./p4s1/.venv/bin/activate 이건 vc code에서 자동 반영이 안된다. 이것 하지말고
-* vc code에서 ctrl+sht+P나 오른쪽 python 버전을 클릭후 패스를 지정해주면 다음 터미널이라 실행시 자동으로 가상환경이 적용된다. 안되면 ctrl+,로 config에서 터미널을 외장으로 설정해줘야 한다고 한다
+* vc code에서 ctrl+sht+P나 오른쪽 python 버전을 클릭후 패스를 지정해주면 다음 터미널이라 실행시 자동으로 가상환경이 적용된다. 안되면터미널을 외장으로 설정해줘야 한다고 한다
 # python File 처리 
 
 ## 파일 읽기/쓰기
@@ -23,6 +23,8 @@ open(filename, mode='r')
 파일 쓰기 : 처리가 완료된 데이터를 (나중에 다시 쓸 수 있게) 별도의 파일로 저장  
 mode에서 'w'은 write 를 의미  
 open(filename, mode='w')  
+ 
+
  
 
 파일을 읽어서 텍스트 출력하기  
